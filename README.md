@@ -4,12 +4,8 @@ Some example code and info regarding the Teensy 3.6 and how to send ADC readings
 # Folder Structure:
 
 Arduino sketches:
-- adc_benchmark: Send different commands to the teensy to compare the speed of different sampling approaches. 
+- adc_benchmark: Send different commands to the teensy to compare the speed of different sampling approaches. Rough results: https://docs.google.com/document/d/14sHQzjeYTCIOY_aDPPR9artdvDI2lmnHlxyexy9dpYM/edit?usp=sharing
 - adc_minimal_block_convert: A trimmed down version of https://github.com/uutzinger/TeensyDMA_ADC_server. Send one command ('c') to initiate a conversion (sampled the ADC a specified sample rate until the buffer is full), send another command ('p') to print the buffer over serial. Makes it easy to add your own commands, and is a god starting point for single channel sampling. 
-
-Docs:
-- Reading Serial Data
-- Benchmark Results
 
 Jupyter Notebooks:
 - Benchmark: Communicates with the benchmarking sketch over serial, demonstrating how to set up serial communication in Python (can be adapted for other languages).
